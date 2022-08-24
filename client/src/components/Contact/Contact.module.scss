@@ -1,0 +1,152 @@
+.contact {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 4rem;
+
+  .formInfos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 2rem;
+
+    h2 {
+      display: inline;
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      color: var(--white);
+      border-bottom: 2px solid var(--blue-hint);
+    }
+
+    span {
+      margin-top: 6rem;
+      font-size: 2.5rem;
+      color: var(--gray-hint);
+    }
+
+    p {
+      margin-top: 2rem;
+      line-height: 1.75;
+      color: var(--gray-hint);
+      font-size: 1.5rem;
+    }
+
+    .city {
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: 3rem;
+        fill: var(--blue-hint);
+        margin-right: 1rem;
+      }
+
+      .cityName {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .formContainer {
+    max-width: 750px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 6rem 0;
+      width: 100%;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      .formGroup {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+
+        &:focus-visible {
+          background: red;
+        }
+      }
+      
+      .formGroupTextArea {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      label {
+        font-size: 2rem;
+        font-weight: 300;
+        color: var(--gray-hint);
+      }
+
+      input,
+      textarea {
+        border: none;
+        background: var(--blue);
+        transition: border-color 0.3s;
+        color: var(--white);
+
+        &::placeholder {
+          color: var(--white);
+          font-weight: 400;
+        }
+
+        &:focus {
+          border-color: var(--blue-hint);
+        }
+      }
+
+      input {
+        height: 40px;
+        margin-bottom: 1rem;
+        outline: none;
+        font-size: 2rem;
+        font-weight: 300;
+        border-bottom: 2px solid var(--gray-hint);
+        padding: 2rem 0 3rem 0;
+      }
+
+      textarea {
+        resize: none;
+        min-height: 110px;
+        width: 100%;
+        font-size: 2rem;
+        outline: none;
+        margin-top: 1rem;
+        border-bottom: 2px solid var(--gray-hint);
+      }
+
+      button {
+        background: var(--blue-hint);
+        color: var(--white);
+        border: none;
+        width: 140px;
+        height: 45px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s background, color 0.3s;
+
+        &:hover {
+          color: var(--blue);
+          background: var(--white);
+        }
+      }
+    }
+  }
+}

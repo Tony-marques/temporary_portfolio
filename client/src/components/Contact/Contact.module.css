@@ -1,0 +1,141 @@
+.contact {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.contact .formInfos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 2rem;
+}
+.contact .formInfos h2 {
+  display: inline;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: var(--white);
+  border-bottom: 2px solid var(--blue-hint);
+}
+.contact .formInfos span {
+  margin-top: 6rem;
+  font-size: 2.5rem;
+  color: var(--gray-hint);
+}
+.contact .formInfos p {
+  margin-top: 2rem;
+  line-height: 1.75;
+  color: var(--gray-hint);
+  font-size: 1.5rem;
+}
+.contact .formInfos .city {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.contact .formInfos .city svg {
+  width: 3rem;
+  fill: var(--blue-hint);
+  margin-right: 1rem;
+}
+.contact .formInfos .city .cityName {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.contact .formContainer {
+  max-width: 750px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.contact .formContainer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6rem 0;
+  width: 100%;
+}
+.contact .formContainer .container .row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.contact .formContainer .container .formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.contact .formContainer .container .formGroup:focus-visible {
+  background: red;
+}
+.contact .formContainer .container .formGroupTextArea {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.contact .formContainer .container label {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--gray-hint);
+}
+.contact .formContainer .container input,
+.contact .formContainer .container textarea {
+  border: none;
+  background: var(--blue);
+  transition: border-color 0.3s;
+  color: var(--white);
+}
+.contact .formContainer .container input::-moz-placeholder, .contact .formContainer .container textarea::-moz-placeholder {
+  color: var(--white);
+  font-weight: 400;
+}
+.contact .formContainer .container input:-ms-input-placeholder, .contact .formContainer .container textarea:-ms-input-placeholder {
+  color: var(--white);
+  font-weight: 400;
+}
+.contact .formContainer .container input::placeholder,
+.contact .formContainer .container textarea::placeholder {
+  color: var(--white);
+  font-weight: 400;
+}
+.contact .formContainer .container input:focus,
+.contact .formContainer .container textarea:focus {
+  border-color: var(--blue-hint);
+}
+.contact .formContainer .container input {
+  height: 40px;
+  margin-bottom: 1rem;
+  outline: none;
+  font-size: 2rem;
+  font-weight: 300;
+  border-bottom: 2px solid var(--gray-hint);
+  padding: 2rem 0 3rem 0;
+}
+.contact .formContainer .container textarea {
+  resize: none;
+  min-height: 110px;
+  width: 100%;
+  font-size: 2rem;
+  outline: none;
+  margin-top: 1rem;
+  border-bottom: 2px solid var(--gray-hint);
+}
+.contact .formContainer .container button {
+  background: var(--blue-hint);
+  color: var(--white);
+  border: none;
+  width: 140px;
+  height: 45px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s background, color 0.3s;
+}
+.contact .formContainer .container button:hover {
+  color: var(--blue);
+  background: var(--white);
+}/*# sourceMappingURL=Contact.module.css.map */

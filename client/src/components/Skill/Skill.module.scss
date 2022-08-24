@@ -1,0 +1,13 @@
+.item {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  height: 75px;
+  color: var(--white);
+  font-size: 2rem;
+
+  img {
+    width: 5rem;
+    margin-right: 1rem;
+  }
+}

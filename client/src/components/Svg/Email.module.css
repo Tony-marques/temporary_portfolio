@@ -1,0 +1,15 @@
+.email {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.email svg {
+  margin-right: 1rem;
+}
+.email svg path {
+  fill: var(--blue-hint);
+}
+.email p {
+  font-size: 2rem;
+  margin-top: 0 !important;
+}/*# sourceMappingURL=Email.module.css.map */

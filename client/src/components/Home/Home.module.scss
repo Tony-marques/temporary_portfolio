@@ -1,0 +1,177 @@
+.home {
+  height: 100vh;
+  display: grid;
+  padding: 2px;
+  gap: 2px;
+  grid:
+    "presentation presentation presentation presentation about about about about" 1fr
+    "presentation presentation presentation presentation about about about about" 1fr
+    "presentation presentation presentation presentation about about about about" 1fr
+    "presentation presentation presentation presentation about about about about" 1fr
+    "presentation presentation presentation presentation projects projects skills skills" 1fr
+    "presentation presentation presentation presentation projects projects skills skills" 1fr
+    "presentation presentation presentation presentation projects projects github linkedin" 1fr
+    "presentation presentation presentation presentation projects projects github linkedin" 1fr
+    / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  .presentation {
+    grid-area: presentation;
+    animation: appearLeft 0.45s 0.45s forwards;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    background-image: url("../../assets/images/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%) contrast(1) brightness(90%);
+    background-color: red;
+    transition: 0.3s filter;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+    .name {
+      font-size: 7.5rem;
+    }
+    .job {
+      font-size: 4rem;
+    }
+    .message {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+    }
+
+    a {
+      margin-top: 3rem;
+      border: 1px solid var(--white);
+      color: var(--white);
+      background: transparent;
+      padding: 0.75rem 2rem;
+      font-size: 2.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s all;
+
+      &:hover {
+        background: #1f2937aa;
+      }
+    }
+  }
+  .about {
+    grid-area: about;
+    animation: appearTop 0.45s 0.9s forwards;
+    background: blue;
+    background-image: url("../../assets/images/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%) contrast(1) brightness(90%);
+    transition: 0.3s filter;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  .projects {
+    grid-area: projects;
+    animation: appearLeft 0.45s 1.35s forwards;
+    background: green;
+    background-image: url("../../assets/images/3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: 0.3s filter;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  .skills {
+    grid-area: skills;
+    animation: appearTop 0.45s 1.8s forwards;
+    background: orange;
+    background-image: url("../../assets/images/4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: 0.3s filter;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  .github {
+    grid-area: github;
+    animation: appearTop 0.45s 2.25s forwards;
+    background: pink;
+    background-image: url("../../assets/images/6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: 0.3s filter;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  .linkedin {
+    grid-area: linkedin;
+    animation: appearLeft 0.45s 2.7s forwards;
+    background: yellow;
+    background-image: url("../../assets/images/7.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(1);
+    transition: 0.3s filter;
+
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  svg {
+    font-size: 5rem;
+  }
+
+  .item {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--blue);
+    transition: filter 0.3s;
+  }
+}
+
+@keyframes appearLeft {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes appearTop {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
